@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  max-width: 1440%;
+  background-image: url(images/bg-pattern-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.section-class {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+/* *********************************************** */
+/* part-1 */
+/* ************************************************* */
+.part1 {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  justify-content: center;
+}
+.logo {
+  align-self: center;
+}
+/* *********************************************** */
+/* text */
+/* ************************************************* */
+.text {
+  align-self: end;
+}
+
+.text-heading1 {
+  font-family: Josefin Sans;
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+  font-size: 70px;
+  letter-spacing: 25px;
+}
+.text-heading2 {
+  font-family: Josefin Sans;
+  font-weight: 600;
+  color: hsl(0, 6%, 24%);
+  font-size: 87px;
+  letter-spacing: 16px;
+}
+.text1 {
+  font-family: Josefin Sans;
+  color: hsla(0, 36%, 70%, 0.726);
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 20px;
+  line-height: 29px;
+}
+/* *********************************************** */
+/* search-bar */
+/* ************************************************* */
+.search-bar {
+  align-self: start;
+  padding-top: 40px;
+}
+.btn {
+  width: 20px;
+  padding: 10px 20px;
+}
+.bar {
+  width: 300px;
+  padding: 10px 20px;
+  margin-left: 0;
+}
+/* *********************************************** */
+/* part-2 */
+/* ************************************************* */
+.search-bar {
+  display: flex;
+  border-radius: 12px;
+  position: relative;
+}
+.bar {
+  width: 70%;
+  height: 50px;
+  border-radius: 35px;
+  border: 1px solid rgba(206, 151, 151, 0.37);
+}
+.bar:active {
+  content: "";
+  border: 1px solid rgba(206, 151, 151, 0.37);
+}
+.btn {
+  width: 90px;
+  height: 50px;
+  border-radius: 40px;
+  color: #fff;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  cursor: pointer;
+  position: absolute;
+  left: 285px;
+  right: 1px;
+  border: 1px solid rgba(206, 151, 151, 0.432);
+  box-shadow: 1px 3px 15px rgba(51, 51, 51, 0.493);
+}
+.bar::placeholder {
+  color: rgba(206, 151, 151, 0.411);
+  letter-spacing: 3px;
+}
+.btn:hover {
+}
