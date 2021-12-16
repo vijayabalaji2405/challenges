@@ -3,108 +3,123 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  width: 100%;
-  max-width: 1440%;
-  background-image: url(images/bg-pattern-desktop.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-.section-class {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-/* *********************************************** */
-/* part-1 */
-/* ************************************************* */
-.part1 {
-  display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
-  justify-content: center;
-}
-.logo {
-  align-self: center;
-}
-/* *********************************************** */
-/* text */
-/* ************************************************* */
-.text {
-  align-self: end;
+  background-color: hsl(185, 75%, 39%);
+  width: 1440px;
+  overflow: hidden;
 }
 
-.text-heading1 {
-  font-family: Josefin Sans;
-  font-weight: 300;
-  color: hsl(0, 36%, 70%);
-  font-size: 70px;
-  letter-spacing: 25px;
+.bod {
+  width: 350px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.text-heading2 {
-  font-family: Josefin Sans;
-  font-weight: 600;
-  color: hsl(0, 6%, 24%);
-  font-size: 87px;
-  letter-spacing: 16px;
+.img1 {
+  margin: 0 auto;
+}
+.img2 {
+  margin-top: -51px;
+  margin-left: 121px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+.top-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.text {
+  font-family: "kumbh sans";
+  font-size: 18px;
+  padding-left: 0px;
+  color: hsl(0, 1%, 34%);
+  font-weight: 700;
+}
+.age {
+  font-size: 17px;
+  font-family: "kumbh sans";
+  color: hsla(227, 10%, 46%, 0.623);
+  font-weight: 400;
 }
 .text1 {
-  font-family: Josefin Sans;
-  color: hsla(0, 36%, 70%, 0.726);
-  font-size: 16px;
+  margin-left: 140px;
+  font-family: "kumbh sans";
   font-weight: 400;
-  padding-top: 20px;
-  line-height: 29px;
+  color: hsla(227, 10%, 46%, 0.623);
+  margin-top: 5px;
+  margin-bottom: 34px;
 }
-/* *********************************************** */
-/* search-bar */
-/* ************************************************* */
-.search-bar {
-  align-self: start;
-  padding-top: 40px;
-}
-.btn {
-  width: 20px;
-  padding: 10px 20px;
-}
-.bar {
-  width: 300px;
-  padding: 10px 20px;
-  margin-left: 0;
-}
-/* *********************************************** */
-/* part-2 */
-/* ************************************************* */
-.search-bar {
+.bot1 {
   display: flex;
-  border-radius: 12px;
-  position: relative;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  font-family: "kumbh sans";
+  margin: 20px;
 }
-.bar {
-  width: 70%;
-  height: 50px;
-  border-radius: 35px;
-  border: 1px solid rgba(206, 151, 151, 0.37);
+.num1 {
+  text-align: center;
+  color: hsl(0, 1%, 34%);
+  font-weight: 700;
+  font-size: 20px;
 }
-.bar:active {
-  content: "";
-  border: 1px solid rgba(206, 151, 151, 0.37);
+.num2 {
+  text-align: center;
+  color: hsl(0, 1%, 34%);
+  font-weight: 700;
+  font-size: 20px;
 }
-.btn {
-  width: 90px;
-  height: 50px;
-  border-radius: 40px;
-  color: #fff;
-  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-  cursor: pointer;
+.num3 {
+  text-align: center;
+  color: hsl(0, 1%, 34%);
+  font-weight: 700;
+  font-size: 20px;
+}
+.bot1 span {
+  color: hsla(227, 10%, 46%, 0.623);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.image1 {
   position: absolute;
-  left: 285px;
-  right: 1px;
-  border: 1px solid rgba(206, 151, 151, 0.432);
-  box-shadow: 1px 3px 15px rgba(51, 51, 51, 0.493);
+  top: -90%;
+  right: 34%;
+  bottom: 10%;
+  left: -26%;
 }
-.bar::placeholder {
-  color: rgba(206, 151, 151, 0.411);
-  letter-spacing: 3px;
+.image2 {
+  position: absolute;
+  top: 60%;
+  right: 17%;
+  bottom: 10%;
+  left: 43%;
 }
-.btn:hover {
+.images {
+  height: 200px;
+}
+.imgs {
+  display: flex;
+}
+.img10 {
+  position: absolute;
+  top: -52%;
+  left: -22%;
+}
+.img20 {
+  position: absolute;
+  top: 47%;
+  right: -19%;
 }
